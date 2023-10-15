@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/3f5eae8e40.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="pop">You entered wrong input</div>
+    <div class="wapper">
+        <div class="d_flex">
+            <div class="box">
+                <div class="column">
+                    <label for="date">Day</label>
+                    <input type="number" placeholder="DD" id="date">
+                </div>
+            </div>
+            <div class="box">
+                <div class="column">
+                    <label for="month">Month</label>
+                    <input type="number" placeholder="MM" id="month">
+                </div>
+            </div>
+            <div class="box">
+                <div class="column">
+                    <label for="year">Year</label>
+                    <input type="number" placeholder="YYYY" id="year">
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <!-- <i class="fa fa-arrow-down"></i> -->
+            <img src="/Images/down arrow .png" alt="">
+        </div>
+        <div class="main_box">
+            <h1 class="year_show"><span>- -</span> year</h1>
+            <h1 class="month_show"><span>- -</span> month</h1>
+            <h1 class="day_show"><span>- -</span> day</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

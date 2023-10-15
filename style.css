@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s all ease-in-out;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.pop {
+    position: absolute;
+    top: 50px;
+    right: -350px;
+    background-color: blueviolet;
+    padding: 10px 50px;
+    font-size: 23px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.wapper {
+    padding: 20px 150px 20px 10px;
+    min-height: 25vh;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.wapper.border_cut {
+    border-bottom-right-radius: 150px;
+    min-height: 500px;
+}
+
+.wapper .main_box {
+    display: none;
+}
+
+.wapper.border_cut .main_box {
+    display: block;
+}
+
+.box {
+    padding: 5px;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.box label {
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.box input {
+    padding: 15px 5px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wapper .arrow {
+    height: 2px;
+    width: 60vw;
+    border: 1px solid lightgray;
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wapper .arrow img {
+    position: absolute;
+    top: -35px;
+    right: -20px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wapper .main_box h1 {
+    font-size: 83px;
+    margin-left: 30px;
+    text-transform: lowercase;
+}
